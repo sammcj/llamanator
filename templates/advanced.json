@@ -1,0 +1,10 @@
+{
+  "prompt": "Explain this: {{.Query}}",
+  "ollama_params": {
+    "stream": false,
+    "options": {
+      "temperature": 0.4,
+      "num_ctx": 30
+    }
+  }
+}
