@@ -1,0 +1,19 @@
+{
+  "server_address": ":28080",
+  "api_url": "https://ollama.icu.lol/api/generate/",
+  "api_key": "",
+  "system_prompt": "",
+  "auth_token": "YOUR_SECRET_TOKEN",
+  "request_timeout": 30,
+  "strip_newline": true,
+  "ollama_params": {
+    "temperature": 0.4,
+    "max_tokens": 100,
+    "stream": false,
+    "SYSTEM": "You are a helpful AI Assistant. You must complete the following request in one single, concise response."
+  },
+  "response_fields": [
+    "response",
+    "model"
+  ]
+}
