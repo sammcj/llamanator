@@ -6,6 +6,7 @@
   "auth_token": "YOUR_SECRET_TOKEN",
   "request_timeout": 30,
   "strip_newline": true,
+  "default_model": "tinyllama:1.1b-chat-v1-fp16",
   "ollama_params": {
     "temperature": 0.4,
     "max_tokens": 100,

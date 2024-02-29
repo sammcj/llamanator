@@ -18,7 +18,7 @@ Default template
 ```yaml
 rest_command:
   call_default_template:
-    url: "http://my-golang-app/template/default"
+    url: "https://llamanator.local/template/default"
     method: POST
     headers:
       Authorization: "Bearer YOUR_SECRET_TOKEN"
@@ -26,24 +26,11 @@ rest_command:
     payload: '{"query": "Your query here"}'
 ```
 
-Lighting template
-
-```yaml
-rest_command:
-  call_lighting_template:
-    url: "http://my-golang-app/template/lighting"
-    method: POST
-    headers:
-      Authorization: "Bearer YOUR_SECRET_TOKEN"
-    content_type: 'application/json'
-    payload: '{"query": "Your query for lighting"}'
-```
-
 ## Curl
 
 ```bash
 curl -X POST "http://localhost:28080/template/default" \
-     -H "Content-Type: application/json" \
-     -H "Authorization: Bearer YOUR_AUTH_TOKEN" \
-     -d '{"query": "This is a test query.", "model": "custom-model-name"}'
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer YOUR_SECRET_TOKEN" \
+  -d '{"query": "tell me a joke"}'
 ```
